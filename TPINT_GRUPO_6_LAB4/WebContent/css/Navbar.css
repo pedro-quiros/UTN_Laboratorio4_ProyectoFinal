@@ -1,0 +1,106 @@
+.navegador {
+    font-family: Arial, sans-serif;
+    background-color: #408080;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.encabezado {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #3f51b5;
+    color: white;
+}
+
+.encabezado h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.nav-brand-container {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.navegador a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #c0f0ff;
+}
+
+.logoNav img {
+    width: 28px;
+    height: 28px;
+    margin-left: 10px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.nav-welcome {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-right: 15px;
+}
+
+.time {
+    color: #c0f0ff;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left: auto;
+}
+
+.navegador a.logout img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.navegador a.logout img:hover,
+.navegador a:hover {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+}
+
+@media (max-width: 768px) {
+    .navegador {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-brand-container {
+        margin-bottom: 10px;
+    }
+
+    .time {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navegador a {
+        margin-right: 10px;
+    }
+
+    .navegador a.logout {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}

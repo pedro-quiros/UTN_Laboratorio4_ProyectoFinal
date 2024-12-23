@@ -1,0 +1,158 @@
+@charset "ISO-8859-1";
+
+/* Contenedor principal */
+.contenedorPrincipal {
+    display: flex;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Encabezado */
+.encabezado {
+    background-color: #408080;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Menu */
+.parteIzq {
+    width: 25%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu ul li {
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 1em;
+    color: #333;
+    display: flex;
+    align-items: center;
+}
+
+.menu ul li a span {
+    margin-right: 10px;
+}
+
+.menu ul li ul {
+    margin-top: 8px;
+    padding-left: 20px;
+}
+
+.menu ul li ul li a {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.menu ul li ul li a:hover {
+    color: #408080;
+}
+
+/* Panel derecho  */
+.parteDer {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*botones */
+.btnSec, .btnCrearUsuario {
+    display: block;
+    width: 50%;
+    margin: 15px auto 0;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btnSec {
+    background-color: #5cb85c;
+}
+
+.btnSec:hover {
+    background-color: #408080;
+}
+
+.btnCrearUsuario {
+    background-color: #ff0000;
+}
+
+.btnCrearUsuario:hover {
+    background-color: #9d0000;
+}
+
+/* Footer */
+.footer {
+    background-color: #408080;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+    border-radius: 0px 0px 10px 10px; 
+}
+
+
+
+/* Otros  */
+fieldset {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.passwoerd-link {
+    display: block;
+    text-align: center;
+    color: #000040;
+    text-decoration: none;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
+
+.passwoerd-link:hover {
+    color: #a40000;
+    text-decoration: underline;
+}
